@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Privacy Policy • Al Rashed Cement DMS Driver</title>
+
+    <meta name="description"
+          content="Privacy Policy for the Al Rashed Cement DMS Driver application.">
+
+    <style>
+        :root {
+            --bg: #f4f7f6;
+            --card: #ffffff;
+            --green-900: #073b2a;
+            --green-800: #0d4f38;
+            --green-700: #116246;
+            --teal: #0f766e;
+            --gold: #d9a441;
+            --text: #102033;
+            --muted: #526172;
+            --border: rgba(15, 98, 70, 0.14);
+            --shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+            --radius: 18px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            min-height: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+            color: var(--text);
+            background:
+                radial-gradient(
+                    circle at top left,
+                    rgba(15, 118, 110, 0.10),
+                    transparent 34rem
+                ),
+                linear-gradient(
+                    180deg,
+                    #f8fafc 0%,
+                    var(--bg) 100%
+                );
+        }
+
+        .shell {
+            width: min(100% - 32px, 1160px);
+            margin: 0 auto;
+            padding: 24px 0 34px;
+        }
+
+        .hero {
+            min-height: 178px;
+            padding: clamp(24px, 4vw, 40px);
+            border-radius: 22px;
+            color: #ffffff;
+            background:
+                radial-gradient(
+                    circle at 82% 12%,
+                    rgba(255,255,255,0.12),
+                    transparent 24rem
+                ),
+                linear-gradient(
+                    135deg,
+                    var(--green-900),
+                    var(--green-700)
+                );
+            display: flex;
+            align-items: center;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(
+                    rgba(255,255,255,0.035) 1px,
+                    transparent 1px
+                ),
+                linear-gradient(
+                    90deg,
+                    rgba(255,255,255,0.035) 1px,
+                    transparent 1px
+                );
+            background-size: 32px 32px;
+            opacity: 0.55;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .eyebrow {
+            margin-bottom: 10px;
+            color: rgba(255,255,255,0.78);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(34px, 5vw, 48px);
+            line-height: 1.05;
+            font-weight: 800;
+        }
+
+        .hero p {
+            max-width: 720px;
+            margin: 16px 0 0;
+            color: rgba(255,255,255,0.88);
+            font-size: 17px;
+            line-height: 1.65;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .card,
+        .contact {
+            border-radius: var(--radius);
+            background: var(--card);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+        }
+
+        .card {
+            padding: 30px;
+            border-top: 4px solid var(--green-700);
+        }
+
+        .title {
+            padding-bottom: 13px;
+            border-bottom: 2px solid rgba(217,164,65,0.88);
+            color: var(--green-900);
+        }
+
+        .title.spaced {
+            margin-top: 32px;
+        }
+
+        .title h2 {
+            margin: 0;
+            font-size: 24px;
+            line-height: 1.2;
+            font-weight: 800;
+        }
+
+        .card p,
+        .section p,
+        .note p,
+        .contact p {
+            color: var(--muted);
+            font-size: 15px;
+            line-height: 1.75;
+        }
+
+        .highlight {
+            margin: 20px 0 0;
+            padding: 18px 20px;
+            border-left: 4px solid var(--green-700);
+            border-radius: 12px;
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(15,118,110,0.10),
+                    rgba(15,118,110,0.04)
+                );
+        }
+
+        .highlight strong {
+            color: var(--teal);
+        }
+
+        .feature {
+            margin-top: 24px;
+            padding-left: 17px;
+            border-left: 3px solid #e2e8f0;
+        }
+
+        .feature h3,
+        .section h3,
+        .note h3 {
+            margin: 0 0 7px;
+            color: var(--green-900);
+            font-size: 18px;
+            line-height: 1.35;
+            font-weight: 800;
+        }
+
+        .feature p,
+        .section p,
+        .note p {
+            margin: 0;
+        }
+
+        .section {
+            margin-top: 24px;
+            padding-left: 17px;
+            border-left: 3px solid #e2e8f0;
+        }
+
+        .note {
+            margin-top: 24px;
+            padding: 18px;
+            border-left: 4px solid var(--green-700);
+            border-radius: 12px;
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(217,164,65,0.16),
+                    rgba(217,164,65,0.06)
+                );
+        }
+
+        .contact {
+            margin-top: 30px;
+            padding: 28px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+            border-top: 4px solid var(--teal);
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(15,118,110,0.10),
+                    rgba(255,255,255,0.96)
+                ),
+                #ffffff;
+        }
+
+        .contact h2 {
+            margin: 0 0 8px;
+            color: var(--green-900);
+            font-size: 23px;
+            font-weight: 800;
+        }
+
+        .contact p {
+            margin: 0;
+        }
+
+        .contact a,
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 44px;
+            padding: 11px 16px;
+            border-radius: 999px;
+            color: #ffffff;
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--green-700),
+                    var(--teal)
+                );
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 800;
+        }
+
+        .footer {
+            margin-top: 28px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(82,97,114,0.18);
+            color: #718096;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .footer strong {
+            display: block;
+            margin-bottom: 4px;
+            color: var(--green-900);
+            font-size: 14px;
+        }
+
+        .back {
+            margin-bottom: 18px;
+        }
+
+        .back-link {
+            min-height: 38px;
+            padding: 8px 14px;
+            background: var(--green-800);
+        }
+
+        @media (max-width: 900px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        @media (max-width: 560px) {
+            .shell {
+                width: min(100% - 22px, 1160px);
+                padding-top: 14px;
+            }
+
+            .hero {
+                padding: 22px;
+                border-radius: 18px;
+            }
+
+            .card,
+            .contact {
+                padding: 22px;
+            }
+
+            .contact a {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<main class="shell">
+
+    <div class="back">
+        <a class="back-link" href="../">
+            ← DMS Driver
+        </a>
+    </div>
+
+    <section class="hero">
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                Al Rashed Cement · DMS Platform
+            </div>
+
+            <h1>Privacy Policy</h1>
+
+            <p>
+                This page explains how Al Rashed Cement Driver Application
+                handles operational data, location visibility, trip documents,
+                and device information.
+            </p>
+
+        </div>
+    </section>
+
+    <section class="grid">
+
+        <article class="card">
+
+            <div class="title">
+                <h2>App Purpose</h2>
+            </div>
+
+            <p class="highlight">
+                This application is intended only for authorized drivers and
+                operational users of <strong>Al Rashed Cement</strong>.
+            </p>
+
+            <div class="title spaced">
+                <h2>Data Collection</h2>
+            </div>
+
+            <p>
+                The application may collect operational information required
+                to execute, monitor, and validate logistics trips.
+            </p>
+
+            <div class="feature">
+                <h3>Camera Images</h3>
+                <p>
+                    Used when capturing required trip documents, delivery notes,
+                    identity documents, signatures, or evidence related to trip
+                    execution.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>Location Data</h3>
+                <p>
+                    Used during active trips for tracking, operational visibility,
+                    route monitoring, and delivery validation when enabled.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>Device Identifiers</h3>
+                <p>
+                    Used for secure sessions, device authorization, audit review,
+                    and account protection.
+                </p>
+            </div>
+
+        </article>
+
+        <article class="card">
+
+            <div class="title">
+                <h2>Data Usage</h2>
+            </div>
+
+            <div class="section">
+                <h3>Purpose of Data</h3>
+
+                <p>
+                    Data is used only to provide logistics functionality,
+                    driver trip execution, operational monitoring, document
+                    validation, reporting, and integration with company backend
+                    systems.
+                </p>
+            </div>
+
+            <div class="section">
+                <h3>Data Sharing</h3>
+
+                <p>
+                    Data may be shared with authorized company systems strictly
+                    for operational, audit, security, and logistics management
+                    purposes.
+                </p>
+            </div>
+
+            <div class="note">
+                <h3>Important Note</h3>
+
+                <p>
+                    Collected data is not sold to third parties. Data is
+                    processed only to support authorized logistics operations
+                    and secured application access.
+                </p>
+            </div>
+
+            <div class="section">
+                <h3>Data Security</h3>
+
+                <p>
+                    Access to application data is restricted to authorized users
+                    and protected by authentication, authorization, audit
+                    controls, and server-side security rules.
+                </p>
+            </div>
+
+        </article>
+
+    </section>
+
+    <section class="contact">
+
+        <div>
+            <h2>Contact Information</h2>
+
+            <p>
+                For privacy requests, questions, or concerns about this policy,
+                contact the authorized IT support team.
+            </p>
+        </div>
+
+        <a href="mailto:alrashedcement.mobile@alrashedcement.com">
+            alrashedcement.mobile@alrashedcement.com
+        </a>
+
+    </section>
+
+    <footer class="footer">
+
+        <strong>Al Rashed Cement</strong>
+
+        Privacy Policy for Driver Application ·
+        Effective for authorized users only
+
+    </footer>
+
+</main>
+
+</body>
+</html>
