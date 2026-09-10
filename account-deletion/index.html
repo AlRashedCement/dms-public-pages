@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Account Deletion • Al Rashed Cement DMS Driver</title>
+
+    <meta name="description"
+          content="Request deletion of your Al Rashed Cement DMS Driver account and associated personal data.">
+
+    <style>
+        :root {
+            --bg: #f4f7f6;
+            --card: #ffffff;
+            --green-900: #073b2a;
+            --green-800: #0d4f38;
+            --green-700: #116246;
+            --teal: #0f766e;
+            --gold: #d9a441;
+            --text: #102033;
+            --muted: #526172;
+            --border: rgba(15, 98, 70, 0.14);
+            --shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+            --radius: 18px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            min-height: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+            color: var(--text);
+            background:
+                radial-gradient(
+                    circle at top left,
+                    rgba(15, 118, 110, 0.10),
+                    transparent 34rem
+                ),
+                linear-gradient(
+                    180deg,
+                    #f8fafc 0%,
+                    var(--bg) 100%
+                );
+        }
+
+        .shell {
+            width: min(100% - 32px, 1160px);
+            margin: 0 auto;
+            padding: 24px 0 34px;
+        }
+
+        .back {
+            margin-bottom: 18px;
+        }
+
+        .back-link,
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 44px;
+            padding: 11px 17px;
+            border-radius: 999px;
+            color: #ffffff;
+            background: linear-gradient(
+                135deg,
+                var(--green-700),
+                var(--teal)
+            );
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 800;
+        }
+
+        .back-link {
+            min-height: 38px;
+            padding: 8px 14px;
+            background: var(--green-800);
+        }
+
+        .hero {
+            padding: clamp(26px, 4vw, 42px);
+            border-radius: 22px;
+            color: #ffffff;
+            background:
+                radial-gradient(
+                    circle at 82% 12%,
+                    rgba(255,255,255,0.12),
+                    transparent 24rem
+                ),
+                linear-gradient(
+                    135deg,
+                    var(--green-900),
+                    var(--green-700)
+                );
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(
+                    rgba(255,255,255,0.035) 1px,
+                    transparent 1px
+                ),
+                linear-gradient(
+                    90deg,
+                    rgba(255,255,255,0.035) 1px,
+                    transparent 1px
+                );
+            background-size: 32px 32px;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .eyebrow {
+            margin-bottom: 10px;
+            color: rgba(255,255,255,0.8);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(34px, 5vw, 48px);
+            line-height: 1.05;
+            font-weight: 800;
+        }
+
+        .hero p {
+            max-width: 760px;
+            margin: 16px 0 0;
+            color: rgba(255,255,255,.90);
+            font-size: 17px;
+            line-height: 1.65;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 28px;
+            margin-top: 28px;
+        }
+
+        .card {
+            padding: 28px;
+            border-radius: var(--radius);
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-top: 4px solid var(--green-700);
+            box-shadow: var(--shadow);
+        }
+
+        .title {
+            padding-bottom: 12px;
+            border-bottom: 2px solid rgba(217,164,65,.88);
+        }
+
+        .title h2 {
+            margin: 0;
+            color: var(--green-900);
+            font-size: 23px;
+            font-weight: 800;
+        }
+
+        .card p,
+        .card li {
+            color: var(--muted);
+            font-size: 15px;
+            line-height: 1.75;
+        }
+
+        .card ul {
+            padding-left: 22px;
+        }
+
+        .request-box {
+            margin-top: 20px;
+            padding: 18px;
+            border-radius: 12px;
+            background: linear-gradient(
+                90deg,
+                rgba(217,164,65,.16),
+                rgba(217,164,65,.06)
+            );
+            border-left: 4px solid var(--gold);
+        }
+
+        .request-box strong {
+            color: var(--green-900);
+        }
+
+        .step {
+            margin-top: 22px;
+            padding-left: 18px;
+            border-left: 3px solid #e2e8f0;
+        }
+
+        .step h3 {
+            margin: 0 0 6px;
+            color: var(--green-900);
+            font-size: 18px;
+        }
+
+        .step p {
+            margin: 0;
+        }
+
+        .important {
+            margin-top: 20px;
+            padding: 18px;
+            border-radius: 12px;
+            background: rgba(15,118,110,.08);
+            border-left: 4px solid var(--teal);
+        }
+
+        .important strong {
+            color: var(--green-900);
+        }
+
+        .footer {
+            margin-top: 28px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(82,97,114,.18);
+            color: #718096;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .footer strong {
+            display: block;
+            margin-bottom: 4px;
+            color: var(--green-900);
+            font-size: 14px;
+        }
+
+        @media (max-width: 900px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 560px) {
+            .shell {
+                width: min(100% - 22px, 1160px);
+                padding-top: 14px;
+            }
+
+            .hero,
+            .card {
+                padding: 22px;
+            }
+
+            .button {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<main class="shell">
+
+    <div class="back">
+        <a class="back-link" href="../">
+            ← DMS Driver
+        </a>
+    </div>
+
+    <section class="hero">
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                Al Rashed Cement · DMS Driver
+            </div>
+
+            <h1>Account Deletion Request</h1>
+
+            <p>
+                Use this page to request deletion of your DMS Driver account
+                and associated personal data, even if you no longer have
+                access to the application.
+            </p>
+
+        </div>
+    </section>
+
+    <section class="grid">
+
+        <article class="card">
+
+            <div class="title">
+                <h2>Request account deletion</h2>
+            </div>
+
+            <p>
+                Send an account-deletion request to the authorized
+                Al Rashed Cement mobile support team using the button below.
+            </p>
+
+            <a
+                class="button"
+                href="mailto:alrashedcement.mobile@alrashedcement.com?subject=DMS%20Driver%20Account%20Deletion%20Request">
+                Send deletion request
+            </a>
+
+            <div class="request-box">
+
+                <strong>
+                    Include enough information to identify your account:
+                </strong>
+
+                <ul>
+                    <li>Your full name.</li>
+                    <li>Your registered mobile number.</li>
+                    <li>
+                        Your Driver ID or Iqama number used with DMS Driver.
+                    </li>
+                </ul>
+
+                <p>
+                    <strong>Do not send</strong> your PIN, OTP, password,
+                    or any other authentication secret by email.
+                </p>
+
+            </div>
+
+        </article>
+
+        <article class="card">
+
+            <div class="title">
+                <h2>What happens next</h2>
+            </div>
+
+            <div class="step">
+                <h3>1. Request received</h3>
+
+                <p>
+                    The support team reviews the request and identifies
+                    the associated DMS Driver account.
+                </p>
+            </div>
+
+            <div class="step">
+                <h3>2. Identity verification</h3>
+
+                <p>
+                    Reasonable identity verification may be required
+                    before account deletion is performed.
+                </p>
+            </div>
+
+            <div class="step">
+                <h3>3. Account and associated data deletion</h3>
+
+                <p>
+                    The DMS Driver account and associated application-access
+                    data are deleted after verification, subject to legitimate
+                    legal, audit, security, and operational retention
+                    obligations described below.
+                </p>
+            </div>
+
+        </article>
+
+        <article class="card">
+
+            <div class="title">
+                <h2>Data covered by the request</h2>
+            </div>
+
+            <p>
+                Depending on the data associated with the account,
+                the deletion request may cover:
+            </p>
+
+            <ul>
+                <li>Driver account and application profile information.</li>
+                <li>Registered mobile number associated with the account.</li>
+                <li>Device registration and application-access information.</li>
+                <li>Authentication and active application-session data.</li>
+                <li>
+                    Personal data stored specifically for DMS Driver
+                    application access and operation.
+                </li>
+            </ul>
+
+            <div class="important">
+                Deleting the DMS Driver account does not necessarily mean
+                that every historical company business record containing
+                the driver's involvement can legally or operationally
+                be removed.
+            </div>
+
+        </article>
+
+        <article class="card">
+
+            <div class="title">
+                <h2>Data that may need to be retained</h2>
+            </div>
+
+            <p>
+                Certain records may be retained where required for legitimate
+                legal, regulatory, security, audit, financial, logistics,
+                or business-record obligations.
+            </p>
+
+            <ul>
+                <li>Completed trip and delivery records.</li>
+                <li>Audit and security records.</li>
+                <li>Records required for fraud or incident investigation.</li>
+                <li>Business records subject to legal retention requirements.</li>
+            </ul>
+
+            <p>
+                Where retention is required, access remains restricted
+                according to company security and authorization controls.
+            </p>
+
+        </article>
+
+    </section>
+
+    <footer class="footer">
+
+        <strong>Al Rashed Cement</strong>
+
+        DMS Driver Account Deletion ·
+        Contact:
+        alrashedcement.mobile@alrashedcement.com
+
+    </footer>
+
+</main>
+
+</body>
+</html>
