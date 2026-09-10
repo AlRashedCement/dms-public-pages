@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Al Rashed Cement DMS Driver</title>
+
+    <style>
+        :root {
+            --green-900: #073b2a;
+            --green-700: #116246;
+            --teal: #0f766e;
+            --gold: #d9a441;
+            --text: #102033;
+            --muted: #526172;
+            --border: rgba(15, 98, 70, 0.14);
+            --shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+            color: var(--text);
+            background:
+                radial-gradient(circle at top left, rgba(15, 118, 110, 0.10), transparent 34rem),
+                linear-gradient(180deg, #f8fafc 0%, #f4f7f6 100%);
+        }
+
+        .shell {
+            width: min(100% - 32px, 980px);
+            margin: 0 auto;
+            padding: 32px 0;
+        }
+
+        .hero {
+            padding: 42px;
+            border-radius: 22px;
+            color: #fff;
+            background:
+                radial-gradient(circle at 82% 12%, rgba(255,255,255,0.12), transparent 24rem),
+                linear-gradient(135deg, var(--green-900), var(--green-700));
+            box-shadow: var(--shadow);
+        }
+
+        .eyebrow {
+            margin-bottom: 10px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            opacity: 0.8;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(34px, 6vw, 52px);
+            line-height: 1.05;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: 16px 0 0;
+            font-size: 17px;
+            line-height: 1.7;
+            opacity: 0.9;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 24px;
+            margin-top: 28px;
+        }
+
+        .card {
+            padding: 30px;
+            border-radius: 18px;
+            background: #fff;
+            border: 1px solid var(--border);
+            border-top: 4px solid var(--green-700);
+            box-shadow: var(--shadow);
+        }
+
+        .card h2 {
+            margin: 0 0 12px;
+            color: var(--green-900);
+            font-size: 24px;
+        }
+
+        .card p {
+            margin: 0 0 22px;
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 46px;
+            padding: 12px 18px;
+            border-radius: 999px;
+            color: #fff;
+            background: linear-gradient(135deg, var(--green-700), var(--teal));
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        footer {
+            margin-top: 28px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(82, 97, 114, 0.18);
+            color: #718096;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        @media (max-width: 720px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<main class="shell">
+
+    <section class="hero">
+        <div class="eyebrow">Al Rashed Cement</div>
+
+        <h1>DMS Driver</h1>
+
+        <p>
+            Public information pages for the Al Rashed Cement DMS Driver application.
+            Use the links below to review the privacy policy or request deletion of
+            your application account and associated personal data.
+        </p>
+    </section>
+
+    <section class="grid">
+
+        <article class="card">
+            <h2>Privacy Policy</h2>
+
+            <p>
+                Learn how the DMS Driver application handles operational data,
+                location information, trip documents, device identifiers, and
+                application security.
+            </p>
+
+            <a class="button" href="./privacy/">
+                View Privacy Policy
+            </a>
+        </article>
+
+        <article class="card">
+            <h2>Account Deletion</h2>
+
+            <p>
+                Request deletion of your DMS Driver account and associated personal
+                data, including when you no longer have access to the application.
+            </p>
+
+            <a class="button" href="./account-deletion/">
+                Request Account Deletion
+            </a>
+        </article>
+
+    </section>
+
+    <footer>
+        Al Rashed Cement Company · DMS Driver Application
+    </footer>
+
+</main>
+</body>
+</html>
